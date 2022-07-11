@@ -1,6 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Shop.Interfaces;
 
+using Microsoft.Extensions.Logging;
+using Shop.Models;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace Shop.Controllers
 {
     public class CarsController : Controller
@@ -12,8 +20,9 @@ namespace Shop.Controllers
             _allCars = allCars;
             _allCategory = allCategory;
         }
-        public ViewResult List()
+        public ViewResult List()        
         {
+            //return View();
             var cars = _allCars.Cars;
             return View(cars);
         }

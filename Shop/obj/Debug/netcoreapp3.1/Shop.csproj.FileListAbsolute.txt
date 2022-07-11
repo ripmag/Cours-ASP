@@ -20,6 +20,7 @@ C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\staticwebassets\S
 C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.input.cache
 C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.output.cache
 C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorCoreGenerate.cache
+C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Cars\List.cshtml.g.cs
 C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\ripmag\source\repos\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs

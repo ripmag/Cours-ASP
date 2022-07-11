@@ -1,4 +1,5 @@
-﻿using Shop.Pages.Models;
+﻿using Shop.Models;
+using Shop.Pages.Models;
 using System.Collections.Generic;
 namespace Shop.Interfaces
 {
