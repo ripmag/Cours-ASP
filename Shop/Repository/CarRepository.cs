@@ -12,7 +12,7 @@ namespace Shop.Repository
         private readonly AppDBContent _appDBContent;
         public CarRepository(AppDBContent appDBContent)
         {
-            _appDBContent = appDBContent;
+            this._appDBContent = appDBContent;
             
         }
 

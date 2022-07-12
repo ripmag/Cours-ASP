@@ -60,3 +60,5 @@ C:\Users\ripmag\source\repos\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\
 C:\Users\ripmag\source\repos\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ripmag\source\repos\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\ripmag\source\repos\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ripmag\source\repos\Shop\Shop\bin\Debug\netcoreapp3.1\DBsettings.json
+C:\Users\ripmag\source\repos\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

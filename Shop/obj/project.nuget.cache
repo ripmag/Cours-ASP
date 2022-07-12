@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ThzYr40WzLy5eKd6XxBncwE5Qi4yhKrlbQsh6pF90xCAL1bLKhGWyWwyXF06W9edUbEga/1VoTNLFXAvXgDnYg==",
+  "dgSpecHash": "ZKVQa155eWqVCcDES41xwnhoZ7kHt2HxA1FlID9vsMGXmSRlHXyL0oD1OQ6H+Mm0+4jTTZNnPC00ULKH9EoF/A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ripmag\\source\\repos\\Shop\\Shop\\Shop.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,10 @@
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.0\\microsoft.entityframeworkcore.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.0\\microsoft.entityframeworkcore.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.0\\microsoft.entityframeworkcore.analyzers.3.1.0.nupkg.sha512",
+    "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.0\\microsoft.entityframeworkcore.design.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.0\\microsoft.entityframeworkcore.relational.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.0\\microsoft.entityframeworkcore.sqlserver.3.1.0.nupkg.sha512",
+    "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.0\\microsoft.entityframeworkcore.tools.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.0\\microsoft.extensions.caching.abstractions.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.0\\microsoft.extensions.caching.memory.3.1.0.nupkg.sha512",
     "C:\\Users\\ripmag\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.0\\microsoft.extensions.configuration.3.1.0.nupkg.sha512",

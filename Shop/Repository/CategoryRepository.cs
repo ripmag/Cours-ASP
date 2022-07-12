@@ -10,7 +10,7 @@ namespace Shop.Repository
         private readonly AppDBContent _appDBContent;
         public CategoryRepository(AppDBContent appDBContent)
         {
-            _appDBContent = appDBContent;
+            this._appDBContent = appDBContent;
 
         }
         public IEnumerable<Category> AllCategories => _appDBContent.Category;

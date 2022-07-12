@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Shop.Pages.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 //using System.Data.Entity;
 //using System.Data.Entity.Core;
 
