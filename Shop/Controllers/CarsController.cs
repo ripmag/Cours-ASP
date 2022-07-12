@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Shop.ViewModels;
 
 namespace Shop.Controllers
 {
@@ -23,8 +24,12 @@ namespace Shop.Controllers
         public ViewResult List()        
         {
             //return View();
-            var cars = _allCars.Cars;
-            return View(cars);
+            //var cars = _allCars.Cars;
+            ViewBag.Title = "Страница с Авто!";
+            CarsListViewModels obj = new CarsListViewModels();
+            obj.AllCars = _allCars.Cars;
+            obj.currCategory = "Автомобоили";
+            return View(obj);
         }
     }
 }
