@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Shop.Interfaces;
 using Shop.Models;
+using Shop.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,18 +13,27 @@ namespace Shop.Controllers
 {
     public class HomeController : Controller
     {
+        private IAllCars _carRep;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IAllCars carRep)
         {
-            _logger = logger;
+            _carRep = carRep;
         }
 
+        public ViewResult Index()
+        {
+            var homeCars = new HomeViewModel { favCars = _carRep.getFavCars };
+
+            return View(homeCars);
+        }
+
+        /*
         public IActionResult Index()
         {
             return View();
         }
-
+        */
         public IActionResult Privacy()
         {
             return View();
@@ -33,5 +44,6 @@ namespace Shop.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
