@@ -39,6 +39,7 @@ namespace Shop
             services.AddControllersWithViews();
             services.AddTransient < IAllCars, CarRepository >();
             services.AddTransient<ICarsCategory, CategoryRepository>();
+            services.AddTransient<IAllOrders, OrdersRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ShopCard.GetCart(sp));//<IHttpContextAccessor, HttpContextAccessor>(); 
             services.AddMemoryCache();

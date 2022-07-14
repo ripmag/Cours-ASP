@@ -26,7 +26,7 @@ namespace Shop.Controllers
         public RedirectToActionResult addToCart(int id)
         {
             var item = _carRep.Cars.FirstOrDefault(i => i.Id == id);
-            if (item == null)
+            if (item != null)
             {
                 _shopCart.AddCart(item);
             }

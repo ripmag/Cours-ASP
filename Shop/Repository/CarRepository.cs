@@ -17,6 +17,7 @@ namespace Shop.Repository
         }
 
         public IEnumerable<Car> Cars => _appDBContent.Car.Include(c => c.Category);
+        public IEnumerable<Car> GetCars => _appDBContent.Car.Where(a => a.Available);
 
         public IEnumerable<Car> getFavCars => _appDBContent.Car.Where(p => p.IsFavorite);
 

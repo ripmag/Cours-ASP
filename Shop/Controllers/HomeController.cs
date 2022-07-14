@@ -23,7 +23,8 @@ namespace Shop.Controllers
 
         public ViewResult Index()
         {
-            var homeCars = new HomeViewModel { favCars = _carRep.getFavCars };
+            //var homeCars = new HomeViewModel { favCars = _carRep.getFavCars };
+            var homeCars = new HomeViewModel { favCars = _carRep.GetCars };
 
             return View(homeCars);
         }

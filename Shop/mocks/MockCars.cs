@@ -23,6 +23,7 @@ namespace Shop.mocks
             } 
         }
         public IEnumerable<Car> getFavCars { get; set; }
+        public IEnumerable<Car> GetCars { get; }
 
         public Car getObjectCar(int carId)
         {
