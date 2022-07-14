@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Shop.ViewModels;
+using Shop.Pages.Models;
 
 namespace Shop.Controllers
 {
@@ -21,15 +22,40 @@ namespace Shop.Controllers
             _allCars = allCars;
             _allCategory = allCategory;
         }
-        public ViewResult List()        
+        [Route("Cars/List")]
+        [Route("Cars/List/{category}")]
+        public ViewResult List(string category)        
         {
+            string _category = category;
+            IEnumerable < Car > cars = null;
+            string currCategory = "";
+            if (string.IsNullOrEmpty(_category))
+            {
+                cars = _allCars.Cars.OrderBy(i => i.Id);
+            }
+            else
+            {
+                if (string.Equals("electro",category, StringComparison.OrdinalIgnoreCase))
+                {
+                    cars = _allCars.Cars.Where(i => i.Category.CategoryName.Equals("Электромобили")).OrderBy(i => i.Id);
+                    currCategory = "Электромобили";
+                }
+                else if (string.Equals("fuel", category, StringComparison.OrdinalIgnoreCase))
+                {
+                    cars = _allCars.Cars.Where(i => i.Category.CategoryName.Equals("Классические авто")).OrderBy(i => i.Id);
+                    currCategory = "Классические авто";
+                }
+                
+                
+            }
             //return View();
             //var cars = _allCars.Cars;
-            ViewBag.Title = "Страница с Авто!";
-            CarsListViewModels obj = new CarsListViewModels();
-            obj.AllCars = _allCars.Cars;
-            obj.currCategory = "Автомобоили";
-            return View(obj);
+            var carObj = new CarsListViewModels
+            {
+                AllCars = cars,
+                currCategory = currCategory
+            };
+            return View(carObj);
         }
     }
 }

@@ -72,6 +72,11 @@ namespace Shop
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "Shop",
+                    pattern: "{controller=Car}/{action=List}/{category?}",
+                    defaults: new { controller = "Car",action = "List"});
+
             });
             
             using (var scope = app.ApplicationServices.CreateScope())
