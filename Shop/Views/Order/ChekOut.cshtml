@@ -1,42 +1,48 @@
 ﻿@model Order
-<div class="row">
-    <h3>Оформление заказа</h3>
+<div class="row justify-content-center">
+   
     <form asp-action="ChekOut" method="post" class="form-horizontal">
-        <div class="form-group">
+         <h3>Оформление заказа</h3>
+        <div class="form-group text-center">
             <label asp-for="Name"></label>
-            <div class="col-md-5">
+            <div class="col-12">
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group text-center">
             <label asp-for="LastName"></label>
-            <div class="col-md-5">
+            <div class="col">
                 <input asp-for="LastName" class="form-control" />
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group text-center"> 
             <label asp-for="Adress"></label>
-            <div class="col-md-5">
+            <div class="col">
                 <input asp-for="Adress" class="form-control" />
                 <span asp-validation-for="Adress" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group text-center">
             <label asp-for="Phone"></label>
-            <div class="col-md-5">
+            <div class="col">
                 <input asp-for="Phone" class="form-control" />
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group text-center">
             <label asp-for="Email"></label>
-            <div class="col-md-5">
+            <div class="col">
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
         </div>
-        <input class="btn btn-success" type="submit" value="Завершить заказ"/>
+            <div class="form-group text-center">
+                <div class="col">
+                <input class="btn btn-success" type="submit" value="Завершить заказ"/>
+            </div>
+        </div>
+        
     </form>
 </div>
