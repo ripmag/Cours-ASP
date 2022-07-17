@@ -35,7 +35,8 @@ namespace Shop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)  
         {
-            services.AddDbContext<AppDBContent>(options=>options.UseSqlServer(confString.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<AppDBContent>(options=>options.UseSqlServer(confString.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppDBContent>(options => options.UseNpgsql(confString.GetConnectionString("DefaultConnection1")));
             services.AddControllersWithViews();
             services.AddTransient < IAllCars, CarRepository >();
             services.AddTransient<ICarsCategory, CategoryRepository>();

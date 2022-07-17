@@ -1,5 +1,6 @@
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Shop;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=Shop;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "DefaultConnection1": "Server=localhost;Port=5432;Database=ShopPostgres; User Id=postgres;Password=00000000"
   }
 }
